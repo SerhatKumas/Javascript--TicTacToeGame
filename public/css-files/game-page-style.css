@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+body{
+    background: black;
+    font-family: 'Mina', sans-serif;
+    color: white;
+}
+.tic-btn{
+height: 20vh;
+width: 20vh;
+border-radius: 1vh;
+font-size: 10vh;
+background-color: #6225E6;
+}
+#centerized-div{
+    min-height: 100vh 
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #FBC638;
+}
+#btn-back{
+    background-color: #6225E6;
+    color: white;
+}
