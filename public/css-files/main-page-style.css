@@ -10,6 +10,12 @@ body{
     min-height: 100vh 
 }
 
+#title{
+    font-weight: 90px;
+    font-size: 80px;
+    color: black;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
