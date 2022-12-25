@@ -60,7 +60,7 @@ function gameFinisher() {
             disableAllSquares();
             isGameEnded = true;      
         }
-        else if(!(compareArrays(playerO.sort(), winStreaks[i])) && stepCounter == 9 && !isGameEnded && winSquaresArray.length==0){
+        else if(stepCounter == 10 && !isGameEnded && winSquaresArray.length==0){
             disableAllSquares();
             colorizeRestOfTheBoard();
             isGameEnded = true;
