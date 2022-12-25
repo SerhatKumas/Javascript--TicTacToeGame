@@ -25,10 +25,10 @@ const gameRunner = (id) => {
     //No one can win the game before 5 times any of the buttons is clicked, so we dont invoke controller method
    if (stepCounter <= 3) {
       setPlayerSymbol(id);
-      stepCounter++;
+      ++stepCounter;
    } else {
       setPlayerSymbol(id);
-      stepCounter++;
+      ++stepCounter;
       gameFinisher();
    }
 }
@@ -69,16 +69,20 @@ function gameFinisher() {
          colorizeRestOfTheBoard();
          disableAllSquares();
          isGameEnded = true;
-      } else if (stepCounter == 10 && !isGameEnded && winSquaresArray.length == 0) {
-         disableAllSquares();
-         colorizeRestOfTheBoard();
-         isGameEnded = true;
-      }
+      } 
+   }
+      if (stepCounter == 9 && !isGameEnded && winSquaresArray.length == 0) {
+      disableAllSquares();
+      colorizeRestOfTheBoard();
+      isGameEnded = true;
    }
 }
 
 //Compares all win cases with players array
 function compareArrays(a, b) {
+   console.log("a");
+   console.log(a);
+   console.log(b);
    if (a.length < b.length) return false;
    else {
       for (var i = 0; i < b.length; i++) {
@@ -102,9 +106,10 @@ function colorizeWinSquares() {
 //Paints all the squares with red except win cases
 function colorizeRestOfTheBoard() {
    for (let i = 1; i < 10; i++) {
-      let winSquare = document.getElementById(i);
+      winSquaresArray
       if (!(winSquaresArray.includes(i))) {
-         winSquare.style.backgroundColor = "red";
+         let square = document.getElementById(i);
+         square.style.backgroundColor = "red";
       }
    }
 }
