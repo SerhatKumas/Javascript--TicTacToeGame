@@ -1,20 +1,22 @@
+/* Main Page Css File*/
 @import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
-body{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mina', sans-serif;
-    overflow: hidden;
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Mina', sans-serif;
+	overflow: hidden;
 }
 
-#centerized-div{
-    min-height: 100vh 
+#centerized-div {
+	min-height: 100vh
 }
 
-#title{
-    font-weight: 90px;
-    font-size: 80px;
-    color: black;
+#title {
+	font-weight: 90px;
+	font-size: 80px;
+	color: black;
 }

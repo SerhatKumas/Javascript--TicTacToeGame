@@ -1,28 +1,37 @@
+/* Game Page Css File*/
 @import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
-body{
-    background: black;
-    font-family: 'Mina', sans-serif;
-    color: white;
-    overflow: hidden;
+
+body {
+	background: black;
+	font-family: 'Mina', sans-serif;
+	color: white;
+	overflow: hidden;
 }
-.tic-btn{
-height: 20vh;
-width: 20vh;
-border-radius: 1vh;
-font-size: 10vh;
-background-color: #6225E6;
+
+/* Spesification Of Game Matrix Buttons*/
+.tic-btn {
+	height: 20vh;
+	width: 20vh;
+	border-radius: 1vh;
+	font-size: 10vh;
+	background-color: #6225E6;
 }
-#centerized-div{
-    min-height: 100vh 
+
+#centerized-div {
+	min-height: 100vh
 }
-a{
-    text-decoration: none;
+
+a {
+	text-decoration: none;
 }
-a:hover{
-    text-decoration: none;
-    color: #FBC638;
+
+a:hover {
+	text-decoration: none;
+	color: #FBC638;
 }
-#btn-back{
-    background-color: #6225E6;
-    color: white;
+
+/* Menu Buttons*/
+#btn-back {
+	background-color: #6225E6;
+	color: white;
 }
