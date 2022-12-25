@@ -3,6 +3,7 @@ body{
     background: black;
     font-family: 'Mina', sans-serif;
     color: white;
+    overflow: hidden;
 }
 .tic-btn{
 height: 20vh;
